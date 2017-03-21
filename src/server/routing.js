@@ -4,6 +4,7 @@ import {
   homePage,
   helloPage,
   helloAsyncPage,
+  weatherPage,
   helloEndpoint,
 } from './controller'
 
@@ -11,6 +12,7 @@ import {
   HOME_PAGE_ROUTE,
   HELLO_PAGE_ROUTE,
   HELLO_ASYNC_PAGE_ROUTE,
+  WEATHER_PAGE_ROUTE,
   helloEndpointRoute,
 } from '../shared/routes'
 
@@ -27,6 +29,10 @@ export default (app: Object) => {
 
   app.get(HELLO_ASYNC_PAGE_ROUTE, (req, res) => {
     res.send(renderApp(req.url, helloAsyncPage()))
+  })
+
+  app.get(WEATHER_PAGE_ROUTE, (req, res) => {
+    res.send(renderApp(req.url, weatherPage()))
   })
 
   app.get(helloEndpointRoute(), (req, res) => {
