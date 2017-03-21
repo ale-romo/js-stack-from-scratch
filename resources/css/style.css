@@ -1,0 +1,114 @@
+/* line 3, ../scss/style.scss */
+body {
+  background: white;
+  color: #686868;
+  font-family: sans-serif; }
+
+/* line 9, ../scss/style.scss */
+.maincontainer {
+  width: 726px;
+  padding: 31px 29px 22px 13px;
+  border: 1px solid #ddd;
+  margin: 20px auto; }
+  /* line 15, ../scss/style.scss */
+  .maincontainer:after {
+    clear: both;
+    content: "";
+    display: block; }
+  /* line 21, ../scss/style.scss */
+  .maincontainer .hour {
+    font-weight: normal;
+    float: left;
+    height: 30px;
+    margin-right: 9px;
+    position: relative;
+    width: 63px; }
+    /* line 29, ../scss/style.scss */
+    .maincontainer .hour-title {
+      position: absolute;
+      text-align: right;
+      right: 0; }
+    /* line 36, ../scss/style.scss */
+    .maincontainer .hour-big-title {
+      font-size: 13px;
+      color: #686868;
+      top: -6px; }
+      /* line 41, ../scss/style.scss */
+      .maincontainer .hour-big-title:after {
+        color: #a7a7a7;
+        font-size: 9px;
+        display: inline-block;
+        margin-left: 3px; }
+      /* line 48, ../scss/style.scss */
+      .maincontainer .hour-big-title-am:after {
+        content: "AM"; }
+      /* line 52, ../scss/style.scss */
+      .maincontainer .hour-big-title-pm:after {
+        content: "PM"; }
+    /* line 59, ../scss/style.scss */
+    .maincontainer .hour-small-title {
+      font-size: 9px;
+      color: #a7a7a7;
+      top: -5px; }
+  /* line 67, ../scss/style.scss */
+  .maincontainer .schedule-panel {
+    background-color: #ececec;
+    border-left: solid 1px #d6d6d6;
+    float: left;
+    height: 30px;
+    position: relative;
+    width: 620px; }
+    /* line 75, ../scss/style.scss */
+    .maincontainer .schedule-panel-filler {
+      height: 6px; }
+    /* line 79, ../scss/style.scss */
+    .maincontainer .schedule-panel:after {
+      content: "";
+      clear: both; }
+    /* line 84, ../scss/style.scss */
+    .maincontainer .schedule-panel .appointment {
+      background: white;
+      border: 1px solid #d5d5d5;
+      border-left: 4px solid #4b6ea9;
+      display: block;
+      float: left;
+      min-height: 31px;
+      padding: 9px 0 0 8px;
+      position: relative;
+      z-index: 10;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      /* line 96, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-title {
+        color: #4b6ea9;
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 2px; }
+      /* line 103, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-subtitle {
+        color: #979797;
+        font-size: 9px;
+        margin-top: 0;
+        margin-bottom: 0; }
+      /* line 110, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment:first-child {
+        margin-left: 10px; }
+      /* line 114, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-length-1 {
+        width: 300px; }
+      /* line 117, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-length-2 {
+        width: 600px; }
+      /* line 121, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-duration-60 {
+        height: 60px; }
+      /* line 125, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-duration-120 {
+        height: 120px; }
+      /* line 129, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-displace-12 {
+        margin-top: 12px; }
+      /* line 133, ../scss/style.scss */
+      .maincontainer .schedule-panel .appointment-displace-20 {
+        margin-top: 20px; }
