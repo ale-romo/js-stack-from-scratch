@@ -2,7 +2,7 @@
 
 export const WEB_PORT = process.env.PORT || 8000
 export const STATIC_PATH = '/static'
-export const APP_NAME = 'Hello App Review test change'
+export const APP_NAME = '3D robotics test'
 
 export const WDS_PORT = 7000
 

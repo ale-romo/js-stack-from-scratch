@@ -10,12 +10,14 @@ import Nav from './component/nav'
 import HomePage from './component/page/home'
 import HelloPage from './component/page/hello'
 import HelloAsyncPage from './component/page/hello-async'
+import WeatherPage from './component/page/weather'
 import NotFoundPage from './component/page/not-found'
 
 import {
   HOME_PAGE_ROUTE,
   HELLO_PAGE_ROUTE,
   HELLO_ASYNC_PAGE_ROUTE,
+  WEATHER_PAGE_ROUTE,
 } from './routes'
 
 const App = () =>
@@ -26,6 +28,7 @@ const App = () =>
       <Route exact path={HOME_PAGE_ROUTE} render={() => <HomePage />} />
       <Route path={HELLO_PAGE_ROUTE} render={() => <HelloPage />} />
       <Route path={HELLO_ASYNC_PAGE_ROUTE} render={() => <HelloAsyncPage />} />
+      <Route path={WEATHER_PAGE_ROUTE} render={() => <WeatherPage />} />
       <Route component={NotFoundPage} />
     </Switch>
   </div>
